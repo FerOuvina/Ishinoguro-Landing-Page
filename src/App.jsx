@@ -1,10 +1,10 @@
-import Main from './components/main';
+import MainRenderBlock from './components/mainRender';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Main />
+      <MainRenderBlock />
     </>
   );
 }
