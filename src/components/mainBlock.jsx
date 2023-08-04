@@ -9,11 +9,11 @@ const MainBlock = block(function Main() {
     <section className='headerContainer w-screen h-screen flex'>
       <article className='headerContent flex flex-col justify-center gap-1 container w-[320px] sm:w-[400px] md:w-[650px]'>
         <div className='headerContent_Container'>
-          <header className='headerContent_header flex flex-col justify-center h-[100px]'>
-            <div className='flex justify-between'>
-              <h1 className='text-4xl px-3'>Ishinoguro</h1>
-              <nav className='flex items-center justify-between'>
-                <ul className='flex gap-2 mr-2'>
+          <header className='headerContent_header'>
+            <div className='headerContent_header-title'>
+              <h1>Ishinoguro</h1>
+              <nav className='headerContent_aboutMeContainer-nav'>
+                <ul>
                   <li>
                     <a
                       href='https://twitter.com/ishinoguro'
@@ -39,45 +39,41 @@ const MainBlock = block(function Main() {
                 </ul>
               </nav>
             </div>
-            <h2 className='pl-8 sm:pl-10 md:pl-11'>
+            <h2 className='headerContent_header-sub'>
               Digital Artist, Freelance Illustrator
             </h2>
           </header>
 
           <hr className='headerContent_hr hr1' />
 
-          <div className='flex flex-col'>
-            <div className='aboutMe_Container'>
-              <aside className=' md:flex md:justify-center md:items-center'>
-                <img
-                  src={Ilustration4}
-                  alt='Ilustration of a women'
-                  className='ilustration4 w-32 max-w-[250px] bg-white'
-                />
-              </aside>
+          <div className='headerContent_aboutMeContainer'>
+            <aside className='headerContent_aboutMeContainer-illustration'>
+              <img src={Ilustration4} alt='waos' />
+            </aside>
 
-              <div className='headerContent_aboutMeContainer-content flex flex-col gap-3'>
-                <div>
-                  <h2>・┆✦ About Me ✦ ┆・</h2>
-                  <h3>Ishi • she/her • 20y. • 🇦🇷</h3>
-                  <h4>sleepiest soldier fighting the biggest naps 💤</h4>
-                </div>
+            <div className='headerContent_aboutMeContainer-content'>
+              <div>
+                <h2>・┆✦ About Me ✦ ┆・</h2>
+                <h3>Ishi • she/her • 20y. • 🇦🇷</h3>
+                <h4>sleepiest soldier fighting the biggest naps 💤</h4>
               </div>
-            </div>
-            <hr className='headerContent_hr' />
-            <div>
-              <span>
-                ⭐Commission status: <em>open!</em>
-              </span>{' '}
-              <br />
-              <span>🎨Clip studio paint 🖌️Wacom One</span> <br />
-              <span>✍🏻Big fanartist 🎥I animate sometimes</span> <br />
-              <span>🔞I may post suggestive content</span> <br />
-              <span></span>
-              <span>
-                I&apos;m learning to draw the fundamentals in my second twitter
-                account
-              </span>
+
+              <hr className='headerContent_hr' />
+
+              <div>
+                <span>
+                  ⭐Commission status: <em>open!</em>
+                </span>{' '}
+                <br />
+                <span>🎨Clip studio paint 🖌️Wacom One</span> <br />
+                <span>✍🏻Big fanartist 🎥I animate sometimes</span> <br />
+                <span>🔞I may post suggestive content</span> <br />
+                <span></span>
+                <span>
+                  I&apos;m learning to draw the fundamentals in my second
+                  twitter account
+                </span>
+              </div>
             </div>
           </div>
 

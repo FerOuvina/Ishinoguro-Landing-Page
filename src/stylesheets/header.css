@@ -18,6 +18,11 @@
 }
 
 .headerContent_header {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
   color: #390a0a;
   border-radius: 10px;
   background-color: #ffffff8a;
