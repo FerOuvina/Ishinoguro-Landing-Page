@@ -11,8 +11,45 @@ const MainBlock = block(function Main() {
         <div className='headerContent_Container'>
           <header className='headerContent_header'>
             <div className='headerContent_header-title'>
-              <h1>Ishinoguro</h1>
-              <nav className='headerContent_aboutMeContainer-nav'>
+              <h1>♡ ISHINOGURO ♡</h1>
+            </div>
+            <h2 className='headerContent_header-sub'>
+             Freelance illustrator ˗ˏˋ ★ ˎˊ˗ character designer
+            </h2>
+          </header>
+
+          <hr className='headerContent_hr hr1' />
+
+          <div className='headerContent_aboutMeContainer'>
+            <aside className='headerContent_aboutMeContainer-illustration'>
+              <img src={Ilustration4} alt='waos' />
+            </aside>
+
+            <div className='headerContent_aboutMeContainer-content'>
+              <div>
+                <h2>₊˚⊹♡ About Me ♡₊˚⊹</h2>
+                <h3>── ★ Ishi • she/her • 20y. • 🇦🇷 ★ ──</h3>
+                <h4>Sleepiest soldier fighting the biggest naps💤</h4>
+                <span></span> <br />
+                <span></span> <br />
+                <span>
+                </span>
+              </div>
+
+              <hr className='headerContent_hr' />
+
+              <div>
+                <span>
+                  ⭐Commission status: <em>open!</em>
+                </span>{' '}
+                <br />
+                <br />
+                <span>✍🏻 What I use . . </span> <br />
+                <span>🎨Clip studio paint 🖌️ Wacom One</span> <br />
+                <br />
+                <span>✍🏻 Where find me? . . </span> <br />
+                <span></span> <br />
+                <nav className='headerContent_aboutMeContainer-nav'>
                 <ul>
                   <li>
                     <a
@@ -36,41 +73,7 @@ const MainBlock = block(function Main() {
                   </li>
                 </ul>
               </nav>
-            </div>
-            <h2 className='headerContent_header-sub'>
-              Digital Artist, Freelance Illustrator
-            </h2>
-          </header>
 
-          <hr className='headerContent_hr hr1' />
-
-          <div className='headerContent_aboutMeContainer'>
-            <aside className='headerContent_aboutMeContainer-illustration'>
-              <img src={Ilustration4} alt='waos' />
-            </aside>
-
-            <div className='headerContent_aboutMeContainer-content'>
-              <div>
-                <h2>・┆✦ About Me ✦ ┆・</h2>
-                <h3>Ishi • she/her • 20y. • 🇦🇷</h3>
-                <h4>sleepiest soldier fighting the biggest naps 💤</h4>
-              </div>
-
-              <hr className='headerContent_hr' />
-
-              <div>
-                <span>
-                  ⭐Commission status: <em>open!</em>
-                </span>{' '}
-                <br />
-                <span>🎨Clip studio paint 🖌️Wacom One</span> <br />
-                <span>✍🏻Big fanartist 🎥I animate sometimes</span> <br />
-                <span>🔞I may post suggestive content</span> <br />
-                <span></span>
-                <span>
-                  I&apos;m learning to draw the fundamentals in my second
-                  twitter account
-                </span>
               </div>
             </div>
           </div>
