@@ -1,0 +1,50 @@
+.headerContainer {
+  background-image: url('../assets/images/mainBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerContent_Container {
+  background-color: #f16b9586;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 1px #605e5e;
+}
+
+.headerContent_header {
+  color: #390a0a;
+  border-radius: 10px;
+  background-color: #ffffff8a;
+  background-image: url('../assets/images/sparkleBackground.gif');
+  background-blend-mode: lighten;
+  box-shadow: 1px 1px 10px 1px #fff;
+}
+
+.headerContent_hr {
+  border: 1px solid #fff;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.hr1 {
+  margin: 20px 0;
+}
+
+.headerContent_Container-descNav ul li a {
+  background-color: rgb(221, 206, 206);
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.headerContent_Container-nav ul li a {
+  color: #390a0a;
+  border-radius: 150px;
+  background-color: rgb(221, 206, 206);
+  padding: 5px;
+}
+
+.headerContent_Container-descNav ul li a:hover,
+.headerContent_Container-nav ul li a:hover {
+  background-color: rgba(221, 206, 206, 0.768);
+  color: #471a1a;
+}
