@@ -11,7 +11,7 @@ import '../stylesheets/mainBlock.css';
 const MainBlock = block(function Main() {
   return (
     <section className='flex justify-center items-center w-screen h-screen headerContainer'>
-      <article className='flex flex-col justify-center w-[320px] sm:w-[450px] md:w-[650px] min-[568px]:w-[400px] lg:relative lg:right-40 xl:right-56 2xl:right-72'>
+      <article className='flex flex-col justify-center w-[320px] sm:w-[450px] md:w-[550px] min-[568px]:w-[400px] lg:relative lg:right-40 xl:right-56 2xl:right-72'>
         <div className='relative p-2 headerContent_Container'>
           <header className='flex flex-col justify-center headerContent_header p-1 text-[#390a0a]'>
             <h1 className='w-full text-2xl font-bold text-center'>
@@ -22,13 +22,17 @@ const MainBlock = block(function Main() {
               <img
                 src={ilustration2}
                 alt='Ilustrator Portrait'
-                className='w-24'
+                className='w-24 md:w-32'
               />
             </div>
             <div className='flex flex-col justify-center items-center text-center'>
               <h2 className='md:text-lg'>₊˚⊹♡ About me ♡₊˚⊹</h2>
-              <h3 className='md:text-lg'>Ishi • she/her • 20 • 🇦🇷</h3>
-              <h4 className='md:text-lg'>Sleepiest soldier fighting the biggest naps💤</h4>
+              <h3 className='md:text-lg'>
+                Ishi | she･her | 20 | 🇦🇷 | infj-t | en.es
+              </h3>
+              <h4 className='px-3 md:text-lg'>
+                Sleepiest soldier fighting the biggest naps 💤
+              </h4>
             </div>
           </header>
 
@@ -45,17 +49,29 @@ const MainBlock = block(function Main() {
                 className='hidden md:block md:w-3/6'
               />
             </div>
-            <span className='text-xl'>
+            <span className='text-lg'>
               ⭐ Commission status:{' '}
-              <em className='text-xl font-bold text-[#841b6c]'>open!</em>
+              <em className='text-lg font-bold text-[#841b6c]'>open!</em>
             </span>{' '}
             <br />
-            <span className='text-lg'>✍🏻 My Tools . . .</span> <br />
             <span className='text-md'>
-              🎨 Clip studio paint ✖️ Wacom One
+              💌 Contact:{' '}
+              <a
+                href='mailto:contactishinoguro@gmail.com'
+                className='font-bold text-[#841b6c] pl-[26px] min-[568px]:pl-0'
+              >
+                contactishinoguro@gmail.com
+              </a>
             </span>{' '}
             <br />
-            <span className='text-lg'>✍🏻 Where to find me? . . .</span> <br />
+            <span className='text-md'>
+              ✨ You can request a draw or ask me{' '}
+              <p className='pl-[26px] '>
+                anything in my curiouscat
+              </p>
+            </span>{' '}
+            <br />
+            <span className='text-md'>✍🏻 You can find me on . . .</span> <br />
             <nav className='headerContent_Container-descNav'>
               <ul className='flex gap-2 justify-evenly md:justify-center md:gap-6'>
                 <li>
@@ -133,7 +149,7 @@ const MainBlock = block(function Main() {
                 </a>
               </li>
             </ul>
-            <li className='w-full'>
+            <li className='flex w-full'>
               <img
                 src={dividerHearts}
                 alt='Divider Hearts Gif'
