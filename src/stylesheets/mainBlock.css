@@ -31,7 +31,7 @@
 }
 
 .headerContent_Container-descNav ul li a {
-  background-color: rgb(221, 206, 206);
+  background-color: rgb(236, 228, 228);
   border-radius: 50%;
   padding: 6px;
 }
@@ -39,8 +39,7 @@
 .headerContent_Container-nav ul li a {
   color: #390a0a;
   border-radius: 150px;
-  background-color: rgb(221, 206, 206);
-  padding: 5px;
+  background-color: rgb(236, 228, 228);
 }
 
 .headerContent_Container-descNav ul li a:hover,
