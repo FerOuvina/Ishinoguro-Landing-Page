@@ -4,5 +4,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [million.vite({ auto: true }), react()],
-  base: 'Ishinoguro-Landing-Page',
+  base: '/Ishinoguro-Landing-Page',
 });
