@@ -13,7 +13,7 @@ const MainBlock = block(function Main() {
     <section className='flex justify-center items-center w-screen h-screen headerContainer'>
       <article className='flex flex-col justify-center w-[320px] sm:w-[450px] md:w-[550px] min-[568px]:w-[400px] lg:relative lg:right-40 xl:right-56 2xl:right-72'>
         <div className='relative p-2 headerContent_Container'>
-          <header className='flex flex-col justify-center headerContent_header p-1 text-[#390a0a]'>
+          <header className='flex flex-col justify-center headerContent_header text-[#390a0a]'>
             <h1 className='w-full text-2xl font-bold text-center'>
               ♡ ISHINOGURO ♡
             </h1>
@@ -22,7 +22,7 @@ const MainBlock = block(function Main() {
               <img
                 src={ilustration2}
                 alt='Ilustrator Portrait'
-                className='w-24 md:w-32'
+                className='w-16 md:w-32'
               />
             </div>
             <div className='flex flex-col justify-center items-center text-center'>
@@ -36,46 +36,45 @@ const MainBlock = block(function Main() {
             </div>
           </header>
 
-          <div className='flex flex-col gap-1 my-2 justify- items-centercenter headerContent_Container-desc'>
+          <div className='flex flex-col justify- items-centercenter headerContent_Container-desc'>
             <div className='flex'>
               <img
                 src={dividerRibbon}
                 alt='Divider Ribbon Gif'
-                className='w-full md:w-3/6'
+                className='w-full sm:w-3/6'
               />
               <img
                 src={dividerRibbon}
                 alt='Divider Ribbon Gif'
-                className='hidden md:block md:w-3/6'
+                className='hidden sm:block sm:w-3/6'
               />
             </div>
-            <span className='text-lg'>
+            <span className='text-md'>
               ⭐ Commission status:{' '}
-              <em className='text-lg font-bold text-[#841b6c]'>open!</em>
+              <em className='text-md font-bold text-[#841b6c]'>open!</em>
             </span>{' '}
-            <br />
             <span className='text-md'>
               💌 Contact:{' '}
               <a
                 href='mailto:contactishinoguro@gmail.com'
                 className='font-bold text-[#841b6c] pl-[26px] min-[568px]:pl-0'
               >
-                contactishinoguro@gmail.com
+                contact@ishinoguro.com.ar
               </a>
             </span>{' '}
-            <br />
             <span className='text-md'>
               ✨ You can request a draw or ask me{' '}
-              <p className='pl-[26px] '>
-                anything in my curiouscat
-              </p>
+              <p className='pl-[26px] '>anything in my curiouscat</p>
             </span>{' '}
-            <br />
             <span className='text-md'>✍🏻 You can find me on . . .</span> <br />
-            <nav className='headerContent_Container-descNav'>
+            <nav className='my-1 headerContent_Container-descNav'>
               <ul className='flex gap-2 justify-evenly md:justify-center md:gap-6'>
                 <li>
-                  <img src={sparkleGif} alt='Sparkle Gif' className='w-12' />
+                  <img
+                    src={sparkleGif}
+                    alt='Sparkle Gif'
+                    className='w-10 md:w-12'
+                  />
                 </li>
                 <li>
                   <a
@@ -89,7 +88,7 @@ const MainBlock = block(function Main() {
                       src={twitterIcon}
                       alt='Twitter Icon'
                       title='Twitter'
-                      className='w-10'
+                      className='w-8 md:w-10'
                     />
                   </a>
                 </li>
@@ -105,7 +104,7 @@ const MainBlock = block(function Main() {
                       src={curiousCatIcon}
                       alt='CuriousCat Icon'
                       title='CuriousCat'
-                      className='w-10'
+                      className='w-8 md:w-10'
                     />
                   </a>
                 </li>
@@ -121,12 +120,16 @@ const MainBlock = block(function Main() {
                       src={tikTokIcon}
                       alt='CuriousCat Icon'
                       title='CuriousCat'
-                      className='w-10'
+                      className='w-8 md:w-10'
                     />
                   </a>
                 </li>
                 <li>
-                  <img src={sparkleGif} alt='Sparkle Gif' className='w-12' />
+                  <img
+                    src={sparkleGif}
+                    alt='Sparkle Gif'
+                    className='w-10 md:w-12'
+                  />
                 </li>
               </ul>
             </nav>
@@ -134,17 +137,17 @@ const MainBlock = block(function Main() {
           <nav className='headerContent_Container-nav'>
             <ul className='flex flex-col gap-2 justify-center items-center w-full md:mb-1 md:flex-row md:mt-1'>
               <li className='w-full'>
-                <a href='#' className='block w-full text-center'>
+                <a href='#' className='block p-1 w-full text-center md:p-[5px]'>
                   Contact
                 </a>
               </li>
               <li className='w-full'>
-                <a href='#' className='block w-full text-center'>
+                <a href='#' className='block p-1 w-full text-center md:p-[5px]'>
                   Comissions
                 </a>
               </li>
               <li className='w-full'>
-                <a href='#' className='block w-full text-center'>
+                <a href='#' className='block p-1 w-full text-center md:p-[5px]'>
                   T.O.S
                 </a>
               </li>
@@ -153,7 +156,7 @@ const MainBlock = block(function Main() {
               <img
                 src={dividerHearts}
                 alt='Divider Hearts Gif'
-                className='block w-full'
+                className='block w-full h-8 md:h-auto'
               />
             </li>
           </nav>
