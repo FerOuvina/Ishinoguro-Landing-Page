@@ -53,7 +53,7 @@ const MainBlock = block(function Main() {
             </span>{' '}
             <a
               href='mailto:contactishinoguro@gmail.com'
-              className='font-bold text-[#841b6c] pl-[26px] min-[568px]:pl-0'
+              className='font-bold text-[#841b6c]'
             >
               <span className='text-black'>• </span>contact@ishinoguro.com.ar
             </a>
