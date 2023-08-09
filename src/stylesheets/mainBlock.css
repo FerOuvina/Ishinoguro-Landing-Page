@@ -5,7 +5,7 @@
 }
 
 .headerContent_Container {
-  background-color: #aca9aab1;
+  background-color: rgba(187, 169, 187, 0.662);
   backdrop-filter: blur(2px);
   border-radius: 10px;
   box-shadow: 2px 2px 5px 1px #605e5e;
