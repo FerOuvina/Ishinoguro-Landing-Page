@@ -5,7 +5,7 @@
 }
 
 .headerContent_Container {
-  background-color: #f16b9586;
+  background-color: #aca9aab1;
   backdrop-filter: blur(2px);
   border-radius: 10px;
   box-shadow: 2px 2px 5px 1px #605e5e;
@@ -18,6 +18,10 @@
   background-image: url('../assets/images/sparkleBackground.gif');
   background-blend-mode: lighten;
   box-shadow: 1px 1px 10px 1px #fff;
+}
+
+.headerContent_header h1 {
+  font-family: 'Playfair Display', serif;
 }
 
 .headerContent_hr {
