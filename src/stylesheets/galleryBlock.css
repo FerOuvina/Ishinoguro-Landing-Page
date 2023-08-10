@@ -36,9 +36,19 @@
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+
+.fullscreen-overlay-closeBtn {
+  border-radius: 10px;
+  margin-top: .5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.608);
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .fullscreen-image {
@@ -47,15 +57,17 @@
   object-fit: contain;
 }
 
-.galleryContainer-list-item.fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.7);
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .galleryContainer-list-item.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
