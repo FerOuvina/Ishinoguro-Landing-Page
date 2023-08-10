@@ -7,7 +7,11 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        custom: '2fr 1fr',
+      },
+    },
   },
   plugins: [],
 };
