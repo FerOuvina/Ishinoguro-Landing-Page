@@ -1,4 +1,3 @@
-import { gsap } from 'gsap';
 import { block } from 'million/react';
 import { debounce } from 'lodash';
 import { useRef, useState } from 'react';
@@ -28,22 +27,10 @@ const GalleryBlock = block(function Gallery() {
 
   const handleImageClick = debounce((index) => {
     setFullscreenImageIndex(index);
-    gsap.to(imageRefs.current[index], {
-      duration: 0.5,
-      scale: 1.1,
-    });
   }, 100);
 
   const handleCloseFullscreen = debounce(() => {
-    const image = imageRefs.current[fullscreenImageIndex];
-    gsap.to(image, {
-      duration: 0,
-      scale: 1,
-      onComplete: () => {
-        setFullscreenImageIndex(null);
-        gsap.set(image, { scale: 1 });
-      },
-    });
+    setFullscreenImageIndex(null);
   }, 100);
 
   const imageRefs = useRef([]);
@@ -51,7 +38,7 @@ const GalleryBlock = block(function Gallery() {
   return (
     <section className='h-full galleryContainer'>
       <div className='py-10 w-full text-3xl min-[480px]:text-5xl text-center md:text-6xl galleryContainer-separator'>
-        <strong>･˚₊𓆩༺</strong> G a l l e r y <strong>༻𓆪₊˚</strong>
+        <strong>━ ˖°˖ ☾</strong> G a l l e r y <strong> ˖°˖ ━</strong>
       </div>
       <article>
         <ul className='galleryContainer-list columns-1 min-[568px]:columns-2 sm:columns-3 px-6 my-8 lg:px-60'>
@@ -79,6 +66,7 @@ const GalleryBlock = block(function Gallery() {
               alt='Fullscreen Image'
               className='fullscreen-image'
             />
+            <p className='fullscreen-overlay-closeBtn'>❌</p>
           </div>
         )}
       </article>
