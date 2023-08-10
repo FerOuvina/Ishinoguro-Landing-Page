@@ -1,0 +1,40 @@
+.footerContainer {
+  background-image: url('../assets/images/contactBackground.png');
+  background-clip: border-box;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.footerContainer h1 {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff;
+  color: #524f50;
+}
+
+.footerContainer-form {
+  background-color: rgba(187, 169, 187, 0.879);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footerContainer-form input,
+.footerContainer-form textarea {
+  border-radius: 10px;
+  resize: none;
+}
+
+.footerContainer-form input:focus,
+.footerContainer-form textarea:focus {
+  outline: none;
+}
+
+.footerContainer-form button {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.footerContainer-form button:hover {
+  background-color: rgba(38, 38, 38, 0.833);
+}
