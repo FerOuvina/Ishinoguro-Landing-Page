@@ -1,3 +1,4 @@
+import { Link } from 'wouter';
 import { block } from 'million/react';
 import ilustration2 from '../assets/images/ilustration2.png';
 import dividerRibbon from '../assets/images/dividerRibbon.gif';
@@ -147,19 +148,21 @@ const MainBlock = block(function Main() {
           <nav className='headerContent_Container-nav'>
             <ul className='flex flex-col gap-2 justify-center items-center w-full md:mb-1 md:flex-row md:mt-1'>
               <li className='w-full'>
-                <a href='#' className='block p-1 w-full text-center md:p-[5px]'>
+                <a href='#gallery' className='block p-1 w-full text-center md:p-[5px]'>
+                  Gallery
+                </a>
+              </li>
+              <li className='w-full'>
+                <a href='#contact' className='block p-1 w-full text-center md:p-[5px]'>
                   Contact
                 </a>
               </li>
               <li className='w-full'>
-                <a href='#' className='block p-1 w-full text-center md:p-[5px]'>
-                  Comissions
-                </a>
-              </li>
-              <li className='w-full'>
-                <a href='#' className='block p-1 w-full text-center md:p-[5px]'>
-                  T.O.S
-                </a>
+                <Link href='/Comissions'>
+                  <a className='block p-1 w-full text-center md:p-[5px]'>
+                    Comissions
+                  </a>
+                </Link>
               </li>
             </ul>
             <li className='flex w-full'>
