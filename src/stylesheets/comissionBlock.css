@@ -1,0 +1,28 @@
+.comissionContainer {
+  background-image: url('../assets/images/galleryBackground.png');
+  background-size: 2500px;
+  background-repeat: no-repeat;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  border-bottom: 1px solid rgba(140, 100, 140, 0.879);
+}
+
+.artwork-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.artwork-subtitle {
+  margin: 0 4rem .5rem 4rem;
+  font-weight: lighter;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(55, 65, 81);
+  background-color: rgba(255, 255, 255, 0.5);
+}
