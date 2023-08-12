@@ -1,10 +1,15 @@
+import { Route } from 'wouter';
 import MainRenderBlock from './components/mainRender';
+import TOSBlock from './components/tosBlock';
+import ComissionBlock from './components/comissionBlock';
 import './App.css';
 
 function App() {
   return (
     <>
-      <MainRenderBlock />
+      <Route path='/' component={MainRenderBlock} />
+      <Route path='/TOS' component={TOSBlock} />
+      <Route path='/Comissions' component={ComissionBlock} />
     </>
   );
 }
