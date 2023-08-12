@@ -43,8 +43,10 @@
 }
 
 .fullscreen-overlay-closeBtn {
-  margin-top: .5rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
   text-align: center;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
