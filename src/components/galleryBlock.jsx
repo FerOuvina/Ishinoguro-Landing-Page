@@ -9,7 +9,6 @@ import illustration5 from '../assets/images/gallery/illustration5.png';
 import illustration6 from '../assets/images/gallery/illustration6.png';
 import illustration7 from '../assets/images/gallery/illustration7.png';
 import illustration8 from '../assets/images/gallery/illustration8.png';
-import closeIcon from '../assets/icons/close.svg';
 import '../stylesheets/galleryBlock.css';
 
 const GalleryBlock = block(function Gallery() {
@@ -38,7 +37,10 @@ const GalleryBlock = block(function Gallery() {
 
   return (
     <section className='h-full galleryContainer'>
-      <div className='py-10 w-full text-3xl min-[480px]:text-5xl text-center md:text-6xl galleryContainer-separator' id='gallery'>
+      <div
+        className='py-10 w-full text-3xl min-[480px]:text-5xl text-center md:text-6xl galleryContainer-separator'
+        id='gallery'
+      >
         <strong>━ ˖°˖ ☾</strong> G a l l e r y <strong> ˖°˖ ━</strong>
       </div>
       <article>
@@ -67,9 +69,7 @@ const GalleryBlock = block(function Gallery() {
               alt='Fullscreen Image'
               className='fullscreen-image'
             />
-            <p className='fullscreen-overlay-closeBtn'>
-              <img src={closeIcon} alt='Close Icon' title='Close' className='w-16' />
-            </p>
+            <p className='fullscreen-overlay-closeBtn'>❌</p>
           </div>
         )}
       </article>
