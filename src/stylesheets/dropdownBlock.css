@@ -1,0 +1,24 @@
+.dropdown-Container {
+  background-color: rgba(187, 169, 187, 0.879);
+  backdrop-filter: blur(5px);
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.dropdown-button {
+  background-color: rgba(229, 225, 229, 0.879);
+  border: 1px solid rgb(61, 44, 56);
+}
+
+.dropdown-button:hover {
+  background-color: rgba(197, 194, 197, 0.879);
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+  .artwork-containerCard {
+    -webkit-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
