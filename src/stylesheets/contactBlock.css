@@ -1,7 +1,6 @@
 .footerContainer {
   background-image: url('../assets/images/contactBackground.png');
   background-clip: border-box;
-  background-size: contain;
   background-repeat: repeat-x;
 }
 

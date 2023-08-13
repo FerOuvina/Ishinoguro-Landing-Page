@@ -16,7 +16,7 @@ const ContactBlock = block(function Contact() {
   };
 
   return (
-    <footer className='px-2 footerContainer' id='contact'>
+    <footer className='px-2 bg-cover lg:bg-contain footerContainer' id='contact'>
       <h1 className='mb-6 text-2xl min-[480px]:text-4xl sm:text-5xl md:text-6xl font-bold text-center'>
         <strong>━ ˖°˖ ☾</strong> C o n t a c t <strong> ˖°˖ ━</strong>
       </h1>
