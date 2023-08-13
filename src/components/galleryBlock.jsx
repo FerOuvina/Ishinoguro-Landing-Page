@@ -9,6 +9,9 @@ import illustration5 from '../assets/images/gallery/illustration5.png';
 import illustration6 from '../assets/images/gallery/illustration6.png';
 import illustration7 from '../assets/images/gallery/illustration7.png';
 import illustration8 from '../assets/images/gallery/illustration8.png';
+import closeIcon from '../assets/icons/close.svg';
+import prevIcon from '../assets/icons/previous.svg';
+import nextIcon from '../assets/icons/next.svg';
 import '../stylesheets/galleryBlock.css';
 
 const GalleryBlock = block(function Gallery() {
@@ -32,6 +35,22 @@ const GalleryBlock = block(function Gallery() {
   const handleCloseFullscreen = debounce(() => {
     setFullscreenImageIndex(null);
   }, 100);
+
+  const showPreviousImage = () => {
+    if (fullscreenImageIndex !== null) {
+      setFullscreenImageIndex((prevIndex) =>
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      );
+    }
+  };
+
+  const showNextImage = () => {
+    if (fullscreenImageIndex !== null) {
+      setFullscreenImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }
+  };
 
   const imageRefs = useRef([]);
 
@@ -63,13 +82,27 @@ const GalleryBlock = block(function Gallery() {
           ))}
         </ul>
         {fullscreenImageIndex !== null && (
-          <div className='fullscreen-overlay' onClick={handleCloseFullscreen}>
+          <div className='fullscreen-overlay'>
             <img
               src={images[fullscreenImageIndex]}
               alt='Fullscreen Image'
               className='fullscreen-image'
             />
-            <p className='fullscreen-overlay-closeBtn'>❌</p>
+
+            <div className='flex justify-between items-center mt-4 w-52'>
+              <button onClick={showPreviousImage}>
+                <img src={prevIcon} alt='Previous Icon' className='w-10' />
+              </button>
+              <img
+                src={closeIcon}
+                alt='Close Icon'
+                className='w-12 cursor-pointer'
+                onClick={handleCloseFullscreen}
+              />
+              <button onClick={showNextImage}>
+                <img src={nextIcon} alt='Next Icon' className='w-10' />
+              </button>
+            </div>
           </div>
         )}
       </article>
