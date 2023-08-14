@@ -1,4 +1,4 @@
-import { block } from 'million/react';
+import { For, block } from 'million/react';
 import { Link } from 'wouter';
 import DropdownBlock from './DropdownBlock';
 import ilustration2 from '../assets/images/ilustration2.png';
@@ -153,14 +153,16 @@ const TOSBlock = block(function TOS() {
       <h2 className='w-full text-2xl min-[480px]:text-3xl md:text-5xl mb-4 bg-white py-4 text-[#524f50] text-center'>
         <strong>━ ˖°˖ ☾</strong> I n f o <strong> ˖°˖ ━</strong>
       </h2>
-      <div className='flex flex-col px-4 md:flex-row md:gap-4 lg:px-16 lg:gap-10'>
-        {sections.map((section, index) => (
-          <DropdownBlock
-            key={index}
-            title={section.title}
-            content={section.content}
-          />
-        ))}
+      <div className='flex flex-col px-4 lg:px-32 md:px-20'>
+        <For each={sections} memo>
+          {(section, index) => (
+            <DropdownBlock
+              key={index}
+              title={section.title}
+              content={section.content}
+            />
+          )}
+        </For>
       </div>
     </>
   );
