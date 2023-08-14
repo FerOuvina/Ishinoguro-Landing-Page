@@ -13,12 +13,3 @@
 .dropdown-button:hover {
   background-color: rgba(197, 194, 197, 0.879);
 }
-
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px) {
-  .artwork-containerCard {
-    -webkit-break-inside: avoid;
-    break-inside: avoid;
-  }
-}
