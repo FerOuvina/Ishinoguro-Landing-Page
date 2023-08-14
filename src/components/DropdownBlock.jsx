@@ -1,5 +1,6 @@
 import { block } from 'million/react';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/dropdownBlock.css';
 
 const DropdownBlock = block(function Dropdown({ title, content }) {
@@ -32,5 +33,10 @@ const DropdownBlock = block(function Dropdown({ title, content }) {
     </div>
   );
 });
+
+DropdownBlock.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.arrayOf(PropTypes.node).isRequired,
+};
 
 export default DropdownBlock;
