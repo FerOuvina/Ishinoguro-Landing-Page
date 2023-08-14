@@ -1,5 +1,5 @@
 import { For, block } from 'million/react';
-import DropdownBlock from './dropdownBlock';
+import DropdownBlock from './DropdownBlock';
 import waos from '../assets/images/gallery/illustration2.png';
 import waos1 from '../assets/images/gallery/illustration4.png';
 import waos2 from '../assets/images/gallery/illustration6.png';
