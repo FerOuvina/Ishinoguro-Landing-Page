@@ -115,7 +115,7 @@ const ContactBlock = block(function Contact() {
         </div>
       </form>
 
-      <div className='flex flex-col my-2 w-full text-xs sm:justify-evenly sm:flex-row'>
+      <div className='flex justify-between px-2 my-2 w-full text-xs sm:justify-evenly'>
         <p>Copyright © 2023</p>
         <p>
           Webstie made by{' '}
