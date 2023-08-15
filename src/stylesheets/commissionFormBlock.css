@@ -1,0 +1,55 @@
+.formContainer {
+  background-color: rgba(187, 169, 187, 0.879);
+  border-radius: 10px;
+}
+
+.formContainer form textarea {
+  resize: none;
+}
+
+.formContainer form input:focus,
+.formContainer form textarea:focus {
+  outline: 1px solid black;
+}
+
+.formContainer form input[type='file'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* 1 */
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.formContainer form button {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.formContainer form button:hover {
+  background-color: rgba(38, 38, 38, 0.833);
+}
+
+.filesLabel {
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+.filesLabel:hover {
+  background-color: rgba(128, 128, 128, 0.37);
+}
+
+.filesLabel:focus-within {
+  outline: 1px solid black;
+}
+
+  .radioOptions {
+    padding: .5rem;
+}
