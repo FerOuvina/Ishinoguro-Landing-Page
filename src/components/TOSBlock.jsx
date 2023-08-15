@@ -139,7 +139,7 @@ const TOSBlock = block(function TOS() {
 
   return (
     <>
-      <div className='flex flex-col justify-center items-center py-2 w-full bg-white'>
+      <div className='flex flex-col justify-center items-center py-2 w-full bg-[#C3B3C3]'>
         <Link to='/'>
           <a>
             <img
@@ -150,10 +150,10 @@ const TOSBlock = block(function TOS() {
           </a>
         </Link>
       </div>
-      <h2 className='w-full text-2xl min-[480px]:text-3xl md:text-5xl mb-4 bg-white py-4 text-[#524f50] text-center'>
+      <h2 className='w-full text-2xl min-[480px]:text-3xl md:text-5xl mb-4 bg-[#C3B3C3] py-4 text-[#524f50] text-center'>
         <strong>━ ˖°˖ ☾</strong> I n f o <strong> ˖°˖ ━</strong>
       </h2>
-      <div className='flex flex-col px-4 lg:px-32 md:px-20'>
+      <div className='flex flex-col px-4 lg:px-32 xl:px-72 2xl:px-80 md:px-20'>
         <For each={sections} memo>
           {(section, index) => (
             <DropdownBlock
