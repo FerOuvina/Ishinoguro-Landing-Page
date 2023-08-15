@@ -25,7 +25,7 @@ const DropdownBlock = block(function Dropdown({ title, content }) {
         }`}
       >
         {content.map((item, index) => (
-          <section key={index} className='p-2 mb-2 dropdown-Container'>
+          <section key={index} className='mb-2 dropdown-Container'>
             {item}
           </section>
         ))}
