@@ -158,7 +158,7 @@ const MainBlock = block(function Main() {
                 </a>
               </li>
               <li className='w-full'>
-                <Link href='/Comissions'>
+                <Link href='/comissions'>
                   <a className='block p-1 w-full text-center md:p-[5px]'>
                     Comissions
                   </a>
