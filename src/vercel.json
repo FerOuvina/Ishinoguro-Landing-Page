@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/commissions",
-      "destination": "/",
-      "statusCode": "404"
-    }
-  ]
-}
