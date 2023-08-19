@@ -148,12 +148,18 @@ const MainBlock = block(function Main() {
           <nav className='headerContent_Container-nav'>
             <ul className='flex flex-col gap-2 justify-center items-center w-full md:mb-1 md:flex-row md:mt-1'>
               <li className='w-full'>
-                <a href='#gallery' className='block p-1 w-full text-center md:p-[5px]'>
+                <a
+                  href='#gallery'
+                  className='block p-1 w-full text-center md:p-[5px]'
+                >
                   Gallery
                 </a>
               </li>
               <li className='w-full'>
-                <a href='#contact' className='block p-1 w-full text-center md:p-[5px]'>
+                <a
+                  href='#contact'
+                  className='block p-1 w-full text-center md:p-[5px]'
+                >
                   Contact
                 </a>
               </li>
@@ -164,14 +170,14 @@ const MainBlock = block(function Main() {
                   </a>
                 </Link>
               </li>
+              <li className='flex w-full'>
+                <img
+                  src={dividerHearts}
+                  alt='Divider Hearts Gif'
+                  className='block w-full h-8 md:h-auto'
+                />
+              </li>
             </ul>
-            <li className='flex w-full'>
-              <img
-                src={dividerHearts}
-                alt='Divider Hearts Gif'
-                className='block w-full h-8 md:h-auto'
-              />
-            </li>
           </nav>
         </div>
       </article>
