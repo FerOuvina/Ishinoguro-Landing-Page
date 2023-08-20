@@ -682,6 +682,12 @@ const CommissionFormBlock = block(function ComissionForm() {
 
           {/* Template form table */}
           <input type='hidden' name='_template' value='table'></input>
+          {/* Redirect to a thank you page */}
+          <input
+            type='hidden'
+            name='_next'
+            value={`https://ishinoguro.com.ar/thankyou`}
+          />
         </form>
       </div>
       <div className='flex justify-between px-2 my-2 w-full text-xs sm:justify-evenly'>
