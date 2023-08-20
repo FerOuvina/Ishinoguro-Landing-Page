@@ -86,7 +86,7 @@ const ContactBlock = block(function Contact() {
         {/* Disable form captcha */}
         <input type='hidden' name='_captcha' value='false'></input>
         {/* Box template for emails */}
-        <input type='hidden' name='_template' value='box'></input>
+        <input type='hidden' name='_template' value='table'></input>
         {/* Avoid spammers */}
         <input type='text' name='_honey' style='display:none'></input>
         {/* Redirect to a thank you page */}
