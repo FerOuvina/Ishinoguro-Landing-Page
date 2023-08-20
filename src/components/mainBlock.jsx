@@ -170,14 +170,14 @@ const MainBlock = block(function Main() {
                   </a>
                 </Link>
               </li>
-              <li className='flex w-full'>
-                <img
-                  src={dividerHearts}
-                  alt='Divider Hearts Gif'
-                  className='block w-full h-8 md:h-auto'
-                />
-              </li>
             </ul>
+            <div className='flex w-full'>
+              <img
+                src={dividerHearts}
+                alt='Divider Hearts Gif'
+                className='block w-full h-8 md:h-auto'
+              />
+            </div>
           </nav>
         </div>
       </article>
