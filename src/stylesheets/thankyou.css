@@ -1,0 +1,8 @@
+.mainContainer {
+  background-image: url('../assets/images/mainBackground.png');
+  background-size: cover;
+}
+
+.contentContainer {
+  background-color: rgba(187, 169, 187, 0.662);
+}
