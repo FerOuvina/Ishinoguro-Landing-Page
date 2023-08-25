@@ -2,6 +2,7 @@ import { Route } from 'wouter';
 import MainRenderBlock from './components/mainRender';
 import ComissionBlock from './components/comissionBlock';
 import ThankyouBlock from './components/thankyou';
+import screenshot from '../src/assets/images/screenshot.png';
 import './App.css';
 
 function App() {
