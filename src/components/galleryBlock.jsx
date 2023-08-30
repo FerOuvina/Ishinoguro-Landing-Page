@@ -1,4 +1,4 @@
-import { block } from 'million/react';
+import { For, block } from 'million/react';
 import { debounce } from 'lodash';
 import { useRef, useState } from 'react';
 import illustration1 from '../assets/images/gallery/illustration1.png';
@@ -64,22 +64,24 @@ const GalleryBlock = block(function Gallery() {
       </div>
       <article>
         <ul className='galleryContainer-list columns-1 min-[568px]:columns-2 sm:columns-3 px-6 my-8 lg:px-60'>
-          {images.map((image, index) => (
-            <li
-              className={`galleryContainer-list-item md:hover:scale-110 md:transition-all md:duration-300 md:ease-in-out ${
-                fullscreenImageIndex === index ? 'fullscreen' : ''
-              }`}
-              key={index}
-              onClick={() => handleImageClick(index)}
-            >
-              <img
-                ref={(element) => (imageRefs.current[index] = element)}
-                src={image}
-                alt='Gallery Image'
-                className='cursor-pointer galleryContainer-list-itemImg'
-              />
-            </li>
-          ))}
+          <For each={images}>
+            {(image, index) => (
+              <li
+                className={`galleryContainer-list-item md:hover:scale-110 md:transition-all md:duration-300 md:ease-in-out ${
+                  fullscreenImageIndex === index ? 'fullscreen' : ''
+                }`}
+                key={index}
+                onClick={() => handleImageClick(index)}
+              >
+                <img
+                  ref={(element) => (imageRefs.current[index] = element)}
+                  src={image}
+                  alt='Gallery Image'
+                  className='cursor-pointer galleryContainer-list-itemImg'
+                />
+              </li>
+            )}
+          </For>
         </ul>
         {fullscreenImageIndex !== null && (
           <div className='fullscreen-overlay'>
