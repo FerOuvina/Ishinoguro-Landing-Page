@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { debounce } from 'lodash';
 import { For, block } from 'million/react';
 import DropdownBlock from './DropdownBlock';
 import closeIcon from '../assets/icons/close.svg';
@@ -9,12 +11,12 @@ import halfBodySketh from '../assets/images/gallery/illustration4.png';
 import halfBodyBaseColor from '../assets/images/gallery/illustration10.png';
 import halfBodyBaseColor1 from '../assets/images/gallery/illustration11.png';
 import halfBodyFullRender from '../assets/images/gallery/illustration1.png';
+import fullBodySketch from '../assets/images/gallery/illustration12.png';
+import fullBodyBaseColor from '../assets/images/gallery/illustration13.png';
 import fullBodyFullRender from '../assets/images/gallery/illustration2.png';
 import fullBodyFullRender1 from '../assets/images/gallery/illustration3.png';
 import dividerPink from '../assets/images/dividerPink.gif';
 import '../stylesheets/comissionBlock.css';
-import { useState } from 'react';
-import { debounce } from 'lodash';
 
 const ArtworkBlock = block(function Artwork() {
   const [fullscreenImage, setFullscreenImage] = useState(null);
@@ -117,27 +119,27 @@ const ArtworkBlock = block(function Artwork() {
             </div>
             <img
               src={iconBustSketch}
-              alt='Sketch of a girl'
+              alt='sketch-of-an-anime-girl-by-ishinoguro'
               className='w-[450px] artwork-img my-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
               onClick={handleClick}
             />
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Sketch</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-48 xl:mx-72 artwork-subtitle'>
-                Starts from $10
+                Starts from $5
               </h2>
             </div>
 
             <div className='flex flex-col gap-2 justify-center items-center 2xl:flex-row'>
               <img
                 src={iconBustBaseColor}
-                alt='Base color of a girl'
+                alt='drawing-of-a-smiling-anime-girl-by-ishinoguro'
                 className='w-[450px] artwork-img mt-4 2xl:mb-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
                 onClick={handleClick}
               />
               <img
                 src={iconBustBaseColor1}
-                alt='Black and white portrait of a women'
+                alt='black-and-white-portrait-of-a-women-by-ishinoguro'
                 className='w-[450px] md:h-[450px] artwork-img mb-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
                 onClick={handleClick}
               />
@@ -145,20 +147,20 @@ const ArtworkBlock = block(function Artwork() {
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Base Color</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-40 xl:mx-60 artwork-subtitle'>
-                Starts from $20
+                Starts from $10
               </h2>
             </div>
 
             <img
               src={iconBustFullRender}
-              alt='Anime styled drawing of a girl'
+              alt='anime-styled-drawing-of-a-girl-by-ishinoguro'
               className='w-[550px] artwork-img my-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
               onClick={handleClick}
             />
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Full Render</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-48 xl:mx-72 artwork-subtitle'>
-                Starts from $30
+                Starts from $20
               </h2>
             </div>
           </div>
@@ -202,27 +204,27 @@ const ArtworkBlock = block(function Artwork() {
             </div>
             <img
               src={halfBodySketh}
-              alt='Sketch of a girl on multiple poses'
+              alt='sketch-of-a-girl-on-multiple-poses-by-ishinoguro'
               className='w-[450px] artwork-img my-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
               onClick={handleClick}
             />
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Sketch</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-48 xl:mx-72 artwork-subtitle'>
-                Starts from $20
+                Starts from $10
               </h2>
             </div>
 
             <div className='flex flex-col gap-2 justify-center items-center 2xl:flex-row'>
               <img
                 src={halfBodyBaseColor}
-                alt='Base color of a girl on the bed'
+                alt='drawing-of-an-anime-styled-girl-on-the-bed-by-ishinoguro'
                 className='w-[450px] artwork-img mt-4 2xl:mb-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
                 onClick={handleClick}
               />
               <img
                 src={halfBodyBaseColor1}
-                alt='Base color of a girl on the bed with darker light'
+                alt='drawing-of-an-anime-styled-girl-on-the-bed-with-darker-light-by-ishinoguro'
                 className='w-[450px] artwork-img mb-4 2xl:mt-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
                 onClick={handleClick}
               />
@@ -230,20 +232,20 @@ const ArtworkBlock = block(function Artwork() {
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Base Color</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-40 xl:mx-60 artwork-subtitle'>
-                Starts from $40
+                Starts from $20
               </h2>
             </div>
 
             <img
               src={halfBodyFullRender}
-              alt='Anime styled drawing of a girl'
+              alt='drawing-of-a-chainsaw-man-anime-girl-by-ishinoguro'
               className='w-[450px] artwork-img my-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
               onClick={handleClick}
             />
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Full Render</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-48 xl:mx-72 artwork-subtitle'>
-                Starts from $55
+                Starts from $30
               </h2>
             </div>
           </div>
@@ -286,7 +288,7 @@ const ArtworkBlock = block(function Artwork() {
               <img src={dividerPink} alt='Divider' className='w-full' />
             </div>
             <img
-              src={iconBustSketch}
+              src={fullBodySketch}
               alt='Sketch of a girl'
               className='w-[450px] artwork-img my-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
               onClick={handleClick}
@@ -294,28 +296,22 @@ const ArtworkBlock = block(function Artwork() {
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Sketch</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-48 xl:mx-72 artwork-subtitle'>
-                Starts from $10
+                Starts from $20
               </h2>
             </div>
 
             <div className='flex flex-col gap-2 justify-center items-center 2xl:flex-row'>
               <img
-                src={iconBustBaseColor}
+                src={fullBodyBaseColor}
                 alt='Base color of a girl'
                 className='w-[450px] artwork-img mt-4 2xl:mt-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
-                onClick={handleClick}
-              />
-              <img
-                src={iconBustBaseColor1}
-                alt='Black and white portrait of a women'
-                className='w-[450px] md:h-[450px] artwork-img mb-4 md:hover:scale-[1.02] md:transition-all md:duration-300 md:ease-in-out'
                 onClick={handleClick}
               />
             </div>
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Base Color</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-40 xl:mx-60 artwork-subtitle'>
-                Starts from $20
+                Starts from $30
               </h2>
             </div>
 
@@ -336,7 +332,7 @@ const ArtworkBlock = block(function Artwork() {
             <div className='artwork-titleSubtitle'>
               <h1 className='artwork-title'>Full Render</h1>
               <h2 className='m-2 sm:my-2 sm:mx-6 md:mx-20 lg:mx-48 xl:mx-72 artwork-subtitle'>
-                Starts from $30
+                Starts from $40
               </h2>
             </div>
           </div>
