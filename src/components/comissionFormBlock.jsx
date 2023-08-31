@@ -106,27 +106,27 @@ const CommissionFormBlock = block(function ComissionForm() {
 
     // Calculate base price based on selected radio buttons
     if (iconBustRef.current.checked && sketchRef.current.checked) {
-      basePrice += 10;
+      basePrice += 5;
     } else if (iconBustRef.current.checked && baseColorRef.current.checked) {
-      basePrice += 20;
+      basePrice += 10;
     } else if (iconBustRef.current.checked && fullRenderRef.current.checked) {
-      basePrice += 30;
+      basePrice += 20;
     }
 
     if (halfBodyRef.current.checked && sketchRef.current.checked) {
-      basePrice += 20;
+      basePrice += 10;
     } else if (halfBodyRef.current.checked && baseColorRef.current.checked) {
-      basePrice += 40;
+      basePrice += 20;
     } else if (halfBodyRef.current.checked && fullRenderRef.current.checked) {
-      basePrice += 55;
+      basePrice += 30;
     }
 
     if (fullBodyRef.current.checked && sketchRef.current.checked) {
-      basePrice += 35;
+      basePrice += 20;
     } else if (fullBodyRef.current.checked && baseColorRef.current.checked) {
-      basePrice += 60;
+      basePrice += 30;
     } else if (fullBodyRef.current.checked && fullRenderRef.current.checked) {
-      basePrice += 80;
+      basePrice += 40;
     }
 
     // Calculate additional charges based on checkboxes
@@ -149,7 +149,7 @@ const CommissionFormBlock = block(function ComissionForm() {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center my-2 w-full'>
+    <div className='flex flex-col justify-center items-center mt-2 w-full'>
       <h1 className='mb-6 text-2xl w-full bg-[#C3B3C3] py-2 text-[#524f50] min-[480px]:text-4xl sm:text-5xl md:text-6xl font-bold text-center'>
         <strong className='hidden text-xl sm:inline sm:text-3xl md:text-4xl lg:text-6xl'>
           ✯¸.•
@@ -690,7 +690,7 @@ const CommissionFormBlock = block(function ComissionForm() {
           />
         </form>
       </div>
-      <div className='flex justify-between px-2 my-2 w-full text-xs sm:justify-evenly'>
+      <div className='flex justify-between px-2 mt-2 w-full text-xs sm:justify-evenly'>
         <p>Copyright © 2023</p>
         <p>
           Webstie made by{' '}
