@@ -1,7 +1,7 @@
 .footerContainer {
   background-image: url('../assets/images/contactBackground.png');
-  background-clip: border-box;
-  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
 }
 
 .footerContainer h1 {
